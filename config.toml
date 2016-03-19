@@ -1,0 +1,241 @@
+# Site settings
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "pt-BR"
+title = "IMBL | Desenvolvimento de software"
+theme = "agency"
+favicon = "favicon.ico"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+	name = "IMBL"
+	description = "Organização para desenvolvimento de Software"
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "imbltechcontato@gmail.com"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "IMBL"
+		services = "Serviços"
+		portfolio = "Portfólio"
+		about = "Sobre nós"
+		team = "Time"
+		contact = "Contato"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "http://gohugo.io"
+    #    name = "Hugo"
+    #    weight = 10
+
+    # postpended links
+    #[[menu.postpend]]
+    #    url = "http://gohugo.io"
+    #    name = "External link"
+    #    weight = 10
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Desenvolvimento de software para o século XXI"
+		subtitle = "IMBL"
+		buttonText = "Conheça mais"
+
+
+	# Services section
+	[params.services]
+    enable = false
+		title = "Services"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-shopping-cart"
+                title = "E-Commerce"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+            [[params.services.row.list]]
+                icon = "fa-laptop"
+                title = "Responsive Design"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+            [[params.services.row.list]]
+                icon = "fa-lock"
+                title = "Web"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+	# Portfolio section
+	[params.portfolio]
+        enable = true
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "Nosso portfólio"
+    subtitle = "Alguns de nossos projetos mais interessantes. Dê uma olhada!"
+
+		[params.portfolio.modal]
+            client = "Cliente"
+            date = "Data"
+            category = "Categoria"
+            buttonText = "Fechar projeto"
+
+
+    # About section
+	[params.about]
+    enable = false
+		title = "About"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		endpoint = "Be part<br>of our<br>story!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+		[[params.about.events]]
+			img = "1.jpg"
+			date = "2009-2011"
+			title = "Our Humble Beginnings"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+		[[params.about.events]]
+			img = "2.jpg"
+			date = "March 2011"
+			title = "An Agency is Born"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+		[[params.about.events]]
+			img = "3.jpg"
+			date = "December 2012"
+			title = "Our Humble Beginnings"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+		[[params.about.events]]
+			img = "4.jpg"
+			date = "July 2014"
+			title = "Phase Two Expansion"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+	# Team section
+	[params.team]
+    enable = true
+		title = "Nosso time"
+		subtitle = "Construindo websites e sistemas incríveis."
+		description = "Faça um orçamento conosco, sem compromisso."
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+		[[params.team.members]]
+			img = "bruno.png"
+			name = "Bruno Panuto"
+			position = "Full Stack, com foco em back-end."
+			social = [
+				["fa-twitter", "https://twitter.com/panuto_"],
+				["fa-facebook", "https://www.facebook.com/BrunoPanuto"],
+				["fa-linkedin", "https://br.linkedin.com/in/bruno-luis-panuto-silva-85b59b5a"],
+				["fa-github", "https://github.com/nubunto"]
+			]
+
+		[[params.team.members]]
+			img = "igor.png"
+			name = "Igor Mesquita"
+			position = "Full Stack, com foco em front-end."
+			social = [
+				["fa-facebook", "https://www.facebook.com/igormmesquita"],
+				["fa-linkedin", "https://br.linkedin.com/in/igor-mesquita-12848033"],
+				["fa-github", "https://github.com/IgorMing"]
+			]
+
+
+	# Client section
+    [params.clients_list]
+        enable = false
+
+    	# All the clients' logos are stored under 'static/img/logos'.
+    	# Replace them with your clients's logos.
+    	[[params.clients]]
+    		logo = "envato.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "designmodo.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "themeforest.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "creative-market.jpg"
+    		link = "#"
+
+
+	# Contact section
+	[params.contact]
+    enable = true
+		title = "Entre em contato"
+		subtitle  = "Estamos ansiosos para tirar suas dúvidas."
+		buttonText = "Enviar mensagem"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Seu Nome *"
+			warning = "Por favor, digite seu nome."
+
+		[params.contact.form.email]
+			text = "Seu Email *"
+			warning = "Por favor, digite seu email."
+
+		[params.contact.form.phone]
+			text = "Seu Telefone *"
+			warning = "Por favor, digite um número de telefone."
+
+		[params.contact.form.message]
+			text = "Sua Mensagem *"
+			warning = "Por favor, digite uma mensagem."
+
+
+	# Footer section
+	[params.footer]
+    enable = true
+		copyright = "Todos os direitos reservados © Imbl Tech"
+
+		[[params.footer.social]]
+			icon = "fa-github"
+			link = "https://github.com/imbl"
+
+		#[[params.footer.social]]
+		#	icon = "fa-facebook"
+		#	link = "#"
+
+		#[[params.footer.social]]
+		#	icon = "fa-linkedin"
+		#	link = "#"
+
+		#[[params.footer.quicklinks]]
+		#	text = "Privacy Policy"
+		#	link = "#"
+
+		#[[params.footer.quicklinks]]
+		#	text = "Terms of Use"
+		#	link = "#"
