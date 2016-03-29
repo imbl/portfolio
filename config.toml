@@ -58,7 +58,7 @@ googleAnalytics = ""
 		# the 'static/img' folder.
 		title = "Desenvolvimento de software para o século XXI"
 		subtitle = "IMBL"
-		buttonText = "Conheça mais"
+		buttonText = "Projetos"
 
 
 	# Services section
@@ -141,7 +141,7 @@ googleAnalytics = ""
     enable = true
 		title = "Nosso time"
 		subtitle = "Construindo websites e sistemas incríveis."
-		description = "Faça um orçamento conosco, sem compromisso."
+		description = "Faça um orçamento conosco sem compromisso."
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
@@ -221,12 +221,12 @@ googleAnalytics = ""
 		copyright = "Todos os direitos reservados © Imbl Tech"
 
 		[[params.footer.social]]
+			icon = "fa-facebook"
+			link = "https://www.facebook.com/imbltech"
+
+		[[params.footer.social]]
 			icon = "fa-github"
 			link = "https://github.com/imbl"
-
-		#[[params.footer.social]]
-		#	icon = "fa-facebook"
-		#	link = "#"
 
 		#[[params.footer.social]]
 		#	icon = "fa-linkedin"

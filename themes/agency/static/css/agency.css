@@ -866,3 +866,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+#logo_img{
+  width: 6em;
+  margin: -30px 0 0;
+}
